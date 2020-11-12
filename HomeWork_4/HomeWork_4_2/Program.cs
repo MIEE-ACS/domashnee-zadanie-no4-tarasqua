@@ -33,7 +33,7 @@ namespace HomeWork_4_2
 
             while (true)
             {
-                Console.WriteLine("Введите количество строк:");
+                Console.Write("Введите количество строк: ");
                 if (int.TryParse(Console.ReadLine(), out length1))
                     break;
                 else
@@ -46,7 +46,7 @@ namespace HomeWork_4_2
 
             while (true)
             {
-                Console.WriteLine("Введите количество столбцов:");
+                Console.Write("Введите количество столбцов: ");
                 if (int.TryParse(Console.ReadLine(), out length2))
                     break;
                 else
@@ -56,6 +56,7 @@ namespace HomeWork_4_2
                     Console.Clear();
                 }
             }
+            Console.WriteLine();
 
             int[,] mas = new int[length1, length2];
             for (int i = 0; i < length1; i++)
